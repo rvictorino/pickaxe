@@ -1,0 +1,38 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pickaxe",
+  "version": "1.0",
+
+   "applications": {
+      "gecko": {
+         "id": "pickaxe@pickaxe.com"
+      }
+   },
+
+  "description": "Mines Monero using coinhive",
+
+  "icons": {
+    "48": "icons/pickaxe-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/pickaxe-32.png",
+    "default_title": "Pickaxe",
+    "default_popup": "pickaxe.html"
+  },
+
+  "content_security_policy": "script-src 'self' https://coinhive.com https://authedmine.com https://*.authedmine.com 'sha256-5TxDHfSyjEb0F7NQ0mz0CgkhHtUGZZl03mNhHX6f3QA='; object-src 'self'",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/"],
+      "js": ["pickaxe.js"]
+    }
+  ],
+
+  "background": {
+    "page": "background-pickaxe.html"
+  }
+
+}
