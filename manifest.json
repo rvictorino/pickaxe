@@ -22,7 +22,7 @@
     "default_popup": "pickaxe.html"
   },
 
-  "content_security_policy": "script-src 'self' https://coinhive.com https://authedmine.com https://*.authedmine.com 'sha256-5TxDHfSyjEb0F7NQ0mz0CgkhHtUGZZl03mNhHX6f3QA='; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://coinhive.com https://authedmine.com https://*.authedmine.com 'sha256-jJuBKYfz5TqN3fWG7gCGz+tCld6JZaHmy0bOfNv1Vls='; object-src 'self'",
 
   "content_scripts": [
     {
