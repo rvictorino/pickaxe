@@ -4,4 +4,4 @@ EXPERIMENTAL use at your own risk
 
 TODO:
  - add public key customization
- - prevent 100% CPU load :innnocent:
+ - prevent 100% CPU load :innocent:
